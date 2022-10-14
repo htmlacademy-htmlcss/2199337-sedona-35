@@ -261,3 +261,173 @@ background-color: #FFFFFF;
   text-decoration: none;
   text-decoration-line: none;
 }
+
+/* Catalogue*/
+
+.inner-header-title {
+font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+  background-image: url("../images/catalog-background.jpg");
+  background-position: center;
+background-repeat: no-repeat;
+}
+
+.breadcrumbs a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+color: #FFFFFF;
+text-decoration: none;
+text-decoration-line: none;
+background-color: #82B3D3;
+}
+
+.breadcrumbs-link a {
+  color: inherit;
+  text-decoration: none;
+text-decoration-line: none;
+}
+
+.catalog-filter-title {
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+background-color: #82B3D3
+}
+
+.label .control-input {
+  font-weight: 400;
+}
+
+.sorting {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.sorting-container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-light {
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.hotel-card {
+  background-color: #ffffff;
+}
+
+
+.hotel-card-link {
+text-decoration: none;
+text-decoration-line: none;
+}
+
+
+.hotel-card-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.hotel-card-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #333333;
+  text-align: right;
+}
+
+.hotel-card-button-more {
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.hotel-card-button-liked {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+text-decoration-line: none;
+color: #ffffff;
+background-color: #7DB54F ;
+}
+
+.hotel-card-button-like {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+text-decoration-line: none;
+color: #ffffff;
+background-color: #82B3D3;
+}
+
+.rating {
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+background-color: #F2F2F2;
+}
+
+
+.pagination {
+  background-color: #ffffff;
+  font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.pagination-link {
+color: #ffffff;
+background-color: #82B3D3;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+
+}
+
+.pagination-link-points {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+color: #000000;
+}

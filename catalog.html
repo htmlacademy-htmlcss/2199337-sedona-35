@@ -4,7 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+
     <link rel="stylesheet" href="styles/style.css">
+
   </head>
 
   <body>
@@ -119,19 +121,21 @@
           <button class="button" type="reset">Сбросить</button>
         </form>
 
+        <div class="sorting-container">
+          <span class="sorting">Найдено гостиниц: 38 </span>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-
-        <a href="#" class="button button-light">
+</div>
+        <a href="#" class="button-light">
           <span class="visually-hidden">Показать список.</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-light" href="#">
           <span class="visually-hidden">Показать карточки.</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-light" href="#">
           <span class="visually-hidden">Показать слайдер.</span>
         </a>
 
@@ -143,11 +147,11 @@
             </a>
             <span>Гостиница</span>
             <b class="hotel-card-price">от 4000 ₽</b>
-            <a class="hotel-card-button" href="#">Подробнее</a>
-            <a class="hotel-card-button" type="button" href="#">В избранное</a>
+            <a class="hotel-card-button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button-like" type="button" href="#">В избранное</a>
             <p class="hotel stars four"><span class="visually-hidden">отель четыре звезды.</span>
             </p>
-            <span class>Рейтинг: 8,5 </span>
+            <span class="rating">Рейтинг: 8,5 </span>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -156,10 +160,10 @@
             </a>
             <span>Гостиница</span>
             <b class="hotel-card-price">от 5000 ₽</b>
-            <a class="hotel-card-button" href="#">Подробнее</a>
-            <a class="hotel-card-button" href="#">В избранном</a>
+            <a class="hotel-card-button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button-liked" href="#">В избранном</a>
             <p class="hotel stars four"><span class="visually-hidden">отель четыре звезды.</span></p>
-            <span class>Рейтинг: 9,2 </span>
+            <span class="rating">Рейтинг: 9,2 </span>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -168,10 +172,10 @@
             </a>
             <span>Гостиница</span>
             <b class="hotel-card-price">от 2500 ₽</b>
-            <a class="hotel-card-button" href="#">Подробнее</a>
-            <a class="hotel-card-button" href="#">В избранное</a>
+            <a class="hotel-card-button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button-like" href="#">В избранное</a>
             <p class="hotel stars three"><span class="visually-hidden">отель три звезды.</span></p>
-            <span class>Рейтинг: 6,9 </span>
+            <span class="rating">Рейтинг: 6,9 </span>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -180,15 +184,15 @@
             </a>
             <span>Гостиница</span>
             <b class="hotel-card-price">от 1500 ₽</b>
-            <a class="hotel-card-button" href="#">Подробнее</a>
-            <a class="hotel-card-button" href="#">В избранное</a>
+            <a class="hotel-card-button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button-like" href="#">В избранное</a>
             <p class="hotel stars two"><span class="visually-hidden">отель две звезды.</span></p>
-            <span class>Рейтинг: 5,0 </span>
+            <span class="rating">Рейтинг: 5,0 </span>
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -200,7 +204,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">...</a>
+            <a class="pagination-link-points">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -220,36 +224,42 @@
     </main>
 
     <footer class="page-footer">
+
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети.</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте.</span>
+            <a class="button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
+
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
+
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб.</span>
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
         </ul>
       </section>
-      <address><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+
+      <address class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
       <span class="visually-hidden">Телефон.</span>
 
       <div class="developer">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo" src="images/html-academy-logo-footer.svg" alt="Логотип htmlacademy." width="115" height="33"></a>
+          <img class="logo" src="images/html-academy-logo-footer.svg" alt="Логотип htmlacademy." width="115"
+            height="33">
+          </a>
       </div>
 
     </footer>
-
   </body>
 
 </html>

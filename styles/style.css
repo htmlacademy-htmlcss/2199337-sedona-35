@@ -19,6 +19,7 @@ html {
   height: 100%;
 }
 
+
 body {
   margin: 0;
   display: flex;
@@ -30,14 +31,24 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
-
 }
 
 .background-site-color {
   padding: 0 40px;
-  width: 1280px;
+  width: 1200px;
   height: 3308px;
   background: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -52,14 +63,19 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
-
+  box-sizing: border-box;
 }
 
 /* Pages */
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0 auto;
-  width: 1280px;
+  width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 .page-header {
@@ -71,24 +87,28 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .logo {
   width: 140px;
   margin: 0 70px 0 44px;
+  position: absolute;
+  padding-top: 0;
+  padding-left: 0;
 }
 
 .navigation-list {
-  width: 439;
-  margin: 0;
-  padding: 0;
+  width: 452px;
+  margin-left: 184px;
+  padding: 0 32px;
 }
 
 
 .navigation-user {
-  max-width: 290px;
+  max-width: 430px;
   margin-left: auto;
-
+padding: 0 30px;
 
 }
 
@@ -143,20 +163,25 @@ body {
   display: block;
   width: 1200px;
   min-height: 282px;
-  padding: 0;
+  padding: 30px 0;
   margin: 0;
+  text-align: center;
 }
 
 .description h2 {
   line-height: 36px;
   font-size: 30px;
   font-weight: 700;
-  text-align: center;
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 69px 290px 141px
+  padding: 0;
+  margin: 0;
+  padding-top: 39px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 10px;
 }
 
 .description p {
@@ -164,61 +189,61 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
-  padding: 166px 274px 90px 275px;
+  padding: 15px 90px 30px 90px;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 /*Advantages*/
 
 .advantages {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  text-align: center;
+
+ font-weight: 400;
+text-align: center;
 }
 
 .advantages-list {
-
-  padding: 0 85px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
-  background-repeat: no-repeat;
-
-}
-
-.advantages-1-img {
-  display: flex;
-
-}
-
-.advantages-2-img {
-  display: flex;
+  list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 .advantages-item-white {
   background-color: #82B3D3;
   background-repeat: no-repeat;
   width: 400px;
+  min-height: 384px;
+
+
+}
+.advantages-description-image {
+  display: block;
+}
+
+.advantages-img {
+display: flex;
 
 }
 
-.advantages-description-image {
-  width: 800px;
-  padding: 0;
-  margin: 0;
+
+.advantages-item {
+  width: 400px;
+  min-height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-repeat: no-repeat;
+margin: 50px;
 }
 
 .advantages-item-gray {
+  width: 400px;
+  min-height: 384px;
   background-color: rgba(131, 179, 211, 0.2);
   background-repeat: no-repeat;
-  width: 400px;
+
 }
 
 .advantages-title {
@@ -227,21 +252,47 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding: 69px 90px 0;
 }
 
 .advantages-title-white {
   color: #FFFFFF;
   background-color: #82B3D3;
+  text-decoration: none;
   text-transform: uppercase;
+  width: 175px;
+  padding: 69px 90px 0;
+  margin: 0;
 }
+
+.adv-item {
+  display: flex;
+  width: 400px;
+
+}
+
 
 .advantages-description {
   color: #333333;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .advantages-description-white {
   color: #FFFFFF;
+  padding-bottom: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+
 }
+
+.text-advantages-white {
+  display: flex;
+
+}
+
 
 .recomendations-list {
   text-align: center;

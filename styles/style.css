@@ -236,21 +236,35 @@ color: #000000;
 .advantages-description {
   text-align: center;
   margin: 0;
+  color: #333333
 }
 
-.advantages-white .advantages-item {
+
+.advantages-title-white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 62px;
+
+
+}
+
+.adv-visit {
   color: #ffffff;
   background-color: #82B3D3;
-
 }
-
 
 .advantages-item-picture {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
-
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .advantages-item {
@@ -259,7 +273,13 @@ color: #000000;
   min-height: 181px;
 }
 
+.advantages-item-grey {
+  width: 230px;
+  padding: 92px 85px 111px 85px;
+  min-height: 181px;
+background-color: rgba(131, 179, 211, 0.2);
 
+}
 
 .advantages-list {
   display: flex;
@@ -271,7 +291,7 @@ color: #000000;
 }
 
 
-.advantages-no-picture {
+.advantages-item-no-pic {
   display: flex;
   flex-direction: row;
   align-items: flex-start;

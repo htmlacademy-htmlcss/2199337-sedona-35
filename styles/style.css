@@ -256,6 +256,7 @@ color: #000000;
 .adv-visit {
   color: #ffffff;
   background-color: #82B3D3;
+  text-align: center;
 }
 
 .advantages-item-picture {
@@ -303,41 +304,25 @@ display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
+
 }
 
 .recomendations-list {
+  font-size: 18px;
+  line-height: 21px;
   list-style-type: none;
-  text-align: center;
-  color: #333333;
-  margin: 0;
-  padding: 0 85px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  word-wrap: break-word;
 }
 
-.recomendations-item-house {
-
-  background: rgba(131, 179, 211, 0.12);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
+.recomendations-item {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
 
 }
-
-.recomendations-item-food {
-
-  background: #FFFFFF;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
-}
-
-.recomendations-item-souvenirs {
-  background: rgba(131, 179, 211, 0.12);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
+.recomendations-item {
+  width: 230px;
+  padding: 92px 85px 111px 85px;
+  min-height: 181px;
 }
 
 .recomendations-title {
@@ -349,6 +334,54 @@ display: flex;
   color: #000000;
   text-align: center;
 }
+
+.blue-reason {
+  background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.white-reason {
+
+background-color: #FFFFFF;
+
+}
+
+.recomendations-description {
+  text-align: center;
+  margin: 0;
+  color: #333333
+
+}
+
+.recomendations-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.icon-house {
+background-image: url(../images/house.svg);
+background-repeat: no-repeat;
+background-position: center top;
+
+}
+
+.icon-food {
+  background-image: url(../images/food.svg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.icon-souvenir {
+  background-image: url(../images/souvenirs.svg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+
 
 .interest {
   font-size: 22px;

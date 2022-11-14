@@ -89,7 +89,10 @@ button:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
+.button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 
 /* Pages */
 
@@ -530,7 +533,7 @@ padding-bottom: 30px;
 
 .white-reason {
 
-background-color: #FFFFFF;
+background-color: #ffffff;
 
 }
 
@@ -579,7 +582,7 @@ height:70px;
 
 .interest {
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 592px;
   padding: 96px 304px;
   text-align: center;
@@ -611,7 +614,7 @@ height:70px;
   font-size: 20px;
   line-height: 36px;
   margin: 0 100px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 50px;
   border-radius: 4px;
   cursor: pointer;
@@ -620,10 +623,11 @@ height:70px;
   text-align: center;
 }
 
+/*Subscribe*/
 
 .subscribe {
 
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #82B3D3;
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
@@ -640,7 +644,7 @@ height:70px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 20px
 }
@@ -651,7 +655,7 @@ height:70px;
   line-height: 26px;
   text-transform: none;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 margin: 0;
   margin-bottom: 54px
 }
@@ -1113,7 +1117,7 @@ line-height: 24px;
 
 .range-input {
   width: 143px;
-min-height: 10px;
+min-height: 8px;
   background-color: #f2f2f2;
   border: 0;
   border-radius: 4px 0 0 4px;
@@ -1352,7 +1356,6 @@ background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   width: 1060px;
-  margin-bottom: 40px;
 margin-left: 70px;
 margin-right: 70px;
 background-color: #ffffff;
@@ -1371,6 +1374,11 @@ border: 1px solid #E6E6E6;
 border-radius: 4px;
 
 }
+
+.hotel-card:last-child {
+  margin-bottom: 40px;
+}
+
 
 .card-info-container {
 

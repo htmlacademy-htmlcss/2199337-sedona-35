@@ -978,7 +978,7 @@ margin-left: 23px;
 }
 
 .group-3 {
-  width: 260px;
+  min-width: 280px;
   padding: 0;
   gap: 32px;
   margin-right: 70px;
@@ -1013,6 +1013,19 @@ margin-top: 56px;
   color: #ffffff;
   margin: 0;
   margin-bottom: 32px;
+  margin-right: 50px;
+padding: 0;
+}
+
+.catalog-filter-title-cost {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 32px;
+  margin-left: 100px;
 padding: 0;
 }
 
@@ -1090,6 +1103,9 @@ bottom: 0;
 display: flex;
 justify-content: center;
 margin-bottom: 48px;
+margin-left: 160px;
+min-height: 35px;
+min-width: 143px;
 
 }
 
@@ -1107,13 +1123,16 @@ margin-bottom: 48px;
 .catalog-filter-label span{
 position: absolute;
 right: 20px;
-bottom: 24px;
+bottom: 19px;
+top: 10px;
 color:#000000;
 opacity: 0.3;
-font-family:  inherit;
+font-family: PT Sans, sans-serif;
 font-weight: 400;
 font-size: 18px;
 line-height: 24px;
+margin: 0;
+padding: 0;
 }
 
 .catalog-filter-label:last-child .range-input{
@@ -1122,20 +1141,23 @@ line-height: 24px;
 
 .range-input {
   width: 143px;
-min-height: 8px;
+min-height: 35px;
   background-color: #f2f2f2;
-  border: 0;
+  border: 2px solid transparent;
   border-radius: 4px 0 0 4px;
   font-family: inherit;
   font-size: 18px;
 line-height: 24px;
-padding: 19px 20px;
+padding: 3px 10px;
   font-weight: 700;
   appearance: none;
+margin: 0;
+
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1148,6 +1170,7 @@ padding: 19px 20px;
   height: 4px;
   background-color: #5f686cff;
   margin-top: 48px;
+  margin-left: 100px;
 }
 
 .range-bar {
@@ -1177,10 +1200,13 @@ padding: 19px 20px;
 
 
 .yes {
-  width: 191px;
+  display: block;
+  min-width: 191px;
+  min-height: 36px;
   background: #82b3d3;
   border: 4px;
   padding: 8px 50px;
+  margin-left: 70px;
 }
 
 .yes:hover,
@@ -1196,9 +1222,11 @@ padding: 19px 20px;
 
 
 .none {
-  width: 191px;
+  display: block;
+  min-width: 191px;
   background-color: transparent;
   border: none;
+  margin-left: 70px;
 }
 
 .none:hover {
